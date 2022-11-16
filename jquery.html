@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Create Form Using jQuery - Demo Preview</title>
+<link rel="stylesheet" type="text/css" href="jqueryform.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.6.1.js"
+  integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+   		 <header>Order/delivery Tracking
+    		<span>Trace your order.</span>
+    	</header>
+    <div class="in-container">
+      <h2>Personal Information</h2>
+        <table class="rwd-table">
+      <tr>
+        <th>Coffee Name</th>
+        <th>Price</th>
+        <th>Quantity</th>
+      </tr>
+      <tr>
+        <td data-th="title">Latte</td>
+        <td data-th="price">USD 2.00</td>
+        <td data-th="quantity"><input type="number" id="qty1" value="0" placeholder="Enter Quantity"/></td>
+      </tr>
+      <tr>
+        <td data-th="title">Cappuccino</td>
+        <td data-th="price">USD 5.00</td>
+        <td data-th="quantity"><input type="number" id="qty2" value="0" placeholder="Enter Quantity"/></td>
+      </tr>
+      <tr>
+        <td data-th="title">Espresso</td>
+        <td data-th="price">USD 3.00</td>
+        <td data-th="quantity"><input type="number" id="qty3" value="0" placeholder="Enter Quantity"/></td>
+      </tr>
+    </table>
+    <fieldset>
+    <legend><div class="number">5</div> Extra Fillings:</legend>
+    <input type="checkbox" id="sugar" name="sugar"><label>Sugar</label><br>
+    <input type="checkbox" id="vanilla" name="vanilla"><label>Vanilla</label></br>
+  <input type="checkbox" id="milk" name="milk"><label>Milk</label></br>
+<input type="checkbox" id="chocolate" name="chocolate"><label>Chocolate</label></br>
+  </fieldset>
+    <fieldset>
+    <legend><div class="number">3</div> Filling Choice:</legend>
+    <input type="radio" id="coconut" name="filling"><label>Coconut</label>
+    <input type="radio" id="marshmallow" name="filling"><label>Marshmallow</label>
+  </fieldset>
+      <div class="row">
+        <div class="col2">
+          <input type="text" name="firstname">
+          <label for="firstname">First Name</label>
+        </div>
+        <div class="col2">
+          <input type="text" name="lastname">
+          <label for="lastname">Last Name</label>
+        </div>
+      </div>
+      <div class="row">
+        <input type="email" name="email">
+        <label for="email">Email</label>
+      </div>
+      <div class="row">
+        <input type="tel" name="contactnum">
+        <label for="contactnum">Contact number</label>
+      </div>
+      <h2>Order Information</h2>
+  
+      <div class="row">
+        <div class="col2">
+          <input type="text" name="city">
+          <label for="city">City</label>
+        </div>
+        <div class="col2">
+          <input type="text" name="state">
+          <label for="state">State/Region/Province</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col2">
+          <input type="text" name="zipcode">
+          <label for="zipcode">Postal/Zip Code</label>
+        </div>
+        <div class="col2">
+          <input type="text" name="country">
+          <label for="country">Country</label>
+        </div>
+      </div>
+      <div class="row">
+          <input type="date" name="date">
+          <label for="date">When did you place your order?</label>
+      </div>  <div class="output">
+        <h2>Form Data Output</h2>
+        <pre class="output-pre"></pre>
+    </div>
+  <script src="jqueryform.js"></script>
+
+    <p>&larr; Enter The Quantities & Hit Total Cost To Get The Price. &rarr;</p>
+    <p>&larr; Click on Submit Order for placing your valuable order. &rarr;</p>
+<script type="text/javascript">
+	
+</script>
+    <button onclick="total()" class="button" style="padding-left:48px;margin-left:40px;">Total Cost</button>
+    <button onclick="submit()" class="button">Submit Order</button>
+    <div class="result" id="total_cost" style="margin-left:40px;">USD 0.00</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,134 @@
+body{
+  background: #1d1e22;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+.container{
+  width: 45%;
+  margin: 50px auto; 
+}
+header{
+  color: #fff;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 600;
+  margin: 50px 0;
+}
+header>span{
+  display: block;
+  font-size: 30px;
+  font-weight: 400;
+}
+.in-container{
+  width: 100%;
+  margin: 40px 0;
+  color: #f6f6f6;
+}
+h2{
+  font-weight: 400;
+  color: #007bff;
+  border-bottom: 1px solid #007bff;
+  border-width: 2px;
+  margin: 20px 50px;
+  padding: 10px;
+  text-align: center;
+}
+.row{
+  width: 100%;
+  margin: 20px 0;
+  padding: 0;
+  display: table;
+}
+.col2{
+  display: table;
+  width: 47%;
+  float: left;
+}
+.col2:nth-child(2){
+  display: table;
+  float: right;
+}
+label{
+  line-height: 35px;
+  display: table-header-group;
+  letter-spacing: 0.9px;
+  transition: all 0.3s ease;
+}
+input{
+  width: 100%;
+  display: table-row-group;
+  border-sizing: border-box;
+  padding: 15px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  background: transparent;
+  color: #f6f6f6;
+  font-size: 1rem;
+}
+input:focus{
+  outline: none !important;
+  border-color: #EF5350;
+}
+input:focus + label{
+  color: #EF5350;
+}
+input[type="submit"]{
+  display: table;
+  width: 30%;
+  margin: 20px -32px 0 auto;
+  background: #EF5350;
+  border: 0;
+  
+}
+input[type="submit"]:hover{
+  background: transparent;
+  border: 2px solid #007bff;
+  color: #007bff;
+  cursor: pointer;
+}
+.button {
+  background-color: #6E4D33;
+  border: none;
+  color: white;
+  padding: 15px 39px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-flex;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 180px;
+  height: 50px;
+}
+.result {
+  background-color: #34495E;
+  color: #fff;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 40px;
+  margin: 4px 2px;
+  width: 304px;
+  height: 50px;
+  display:block;
+}
+.button:hover {
+  background-color: #FFFFFF;
+  border: 1px solid #333;
+  color: #333;
+  font-weight: normal;
+}
+.credits{
+  margin-top:50px; 
+  padding:20px;
+  border-radius:5px;
+  width:450px;
+  text-align:center;
+  color:gray;
+}
+a {
+  color:gray;
+  text-decoration:none;
+}
+a:hover{
+  color:#34495E;
+}
